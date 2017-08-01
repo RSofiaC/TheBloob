@@ -1,0 +1,39 @@
+DATA SHEET
+
+ 5 Sensors
+      MPX5010 GP CASE 867B-04
+Connected through analogRead on A0 ? A5
+	Power supply 5V
+Max supply Voltage = 5.25 Vdc
+Max pressure = 10 kPa / 1019.78 mmH2O
+Data sheet = http://www.nxp.com/docs/en/data-sheet/MPX5010.pdf
+
+Board
+	Arduino Genuino Micro
+	Communication ?The 32U4 provides UART TTL (5V) serial 
+communication, which is available on digital pins 0 (RX) and 1 (TX). 
+The ATmega32U4 also allows for serial (CDC) communication over 
+USB and appears as a virtual com port to software on the computer. 
+The chip also acts as a full speed USB 2.0 device, using standard 
+USB COM drivers. On Windows, a .inf file is required . The Arduino 
+Software (IDE) includes a serial monitor which allows simple textual 
+data to be sent to and from the board. The RX and TX LEDs on the 
+board will flash when data is being transmitted via the USB 
+connection to the computer (but not for serial communication on pins 
+0 and 1).
+A SoftwareSerial library allows for serial communication on other 
+Micro's digital pins.
+The ATmega32U4 also supports I2C (TWI) and SPI communication. 
+The Arduino Software (IDE) includes a Wire library to simplify use of 
+the I2C bus; see the documentation for details. For SPI 
+communication, use the SPI library.
+The Micro appears as a generic keyboard and mouse, and can be 
+programmed to control these input devices using the Keyboard and 
+Mouse classes.?
+	Data Sheet = https://store.arduino.cc/usa/arduino-micro
+
+LED
+    3mm white LED
+    Connected through analogWrite on PWM: 3, 5, 6, 9, 10, 11
+   	220 Ohm resistor
+
